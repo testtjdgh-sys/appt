@@ -1,0 +1,62 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="170" y1="80" x2="1030" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#16112E"/>
+    </linearGradient>
+    <linearGradient id="tech" x1="310" y1="160" x2="890" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="left" x1="220" y1="240" x2="420" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="right" x1="780" y1="240" x2="980" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A855F7"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.05  0 1 0 0 0.71  0 0 1 0 0.92  0 0 0 0.58 0"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="760" rx="40" fill="url(#bg)"/>
+  <circle cx="220" cy="140" r="120" fill="#06B6D4" fill-opacity="0.10" filter="url(#glow)"/>
+  <circle cx="980" cy="610" r="160" fill="#A855F7" fill-opacity="0.10" filter="url(#glow)"/>
+
+  <text x="600" y="115" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700" fill="#F8FAFC">AI는 기술 혁명이 아니다</text>
+  <text x="600" y="158" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700" fill="#A5B4FC">노동력 혁명이다</text>
+
+  <g filter="url(#glow)">
+    <rect x="320" y="220" width="560" height="240" rx="34" fill="url(#tech)" fill-opacity="0.14"/>
+  </g>
+  <rect x="300" y="200" width="600" height="280" rx="36" fill="#111827" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+
+  <text x="600" y="255" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="600" fill="#E2E8F0">기술</text>
+  <text x="600" y="292" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#94A3B8">도구를 새로 만드는 것</text>
+
+  <g>
+    <rect x="350" y="334" width="160" height="84" rx="22" fill="url(#left)"/>
+    <rect x="520" y="334" width="160" height="84" rx="22" fill="#111827" stroke="#38BDF8" stroke-width="2"/>
+    <rect x="690" y="334" width="160" height="84" rx="22" fill="url(#right)"/>
+    <path d="M510 376H520" stroke="rgba(255,255,255,0.45)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M680 376H690" stroke="rgba(255,255,255,0.45)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <text x="430" y="369" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">일을 맡김</text>
+  <text x="600" y="369" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#38BDF8">AI</text>
+  <text x="770" y="369" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">결과</text>
+  <text x="430" y="396" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#E2E8F0">작업 지시</text>
+  <text x="770" y="396" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#E2E8F0">완성된 산출물</text>
+
+  <g>
+    <path d="M600 255V324" stroke="#38BDF8" stroke-width="5" stroke-linecap="round"/>
+    <path d="M600 324L584 308" stroke="#38BDF8" stroke-width="5" stroke-linecap="round"/>
+    <path d="M600 324L616 308" stroke="#38BDF8" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <text x="600" y="560" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="700" fill="#F8FAFC">AI는 도구를 만드는 기술보다 일을 맡아 처리하는 노동력에 가깝다</text>
+  <text x="600" y="598" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#C4B5FD">그래서 핵심은 “무엇을 시킬지”가 아니라 “어떻게 나눠 맡길지”다</text>
+</svg>
