@@ -38,10 +38,10 @@ const presenterNotes = [
   사용자 A는 단순 지시 방식으로 <em>'로그인 TC 만들어줘'</em>라고 챗봇에 호출합니다. 결과는 상식적이고 단편적인 수준에 그칩니다.
   
   반면 사용자 B는 지휘관의 관점에서 요구사항을 쪼개고, 위협 요소를 파악하고, 예외 설계를 수행하라고 문제를 구체화하여 명령합니다. 
-  결과는 비교가 불가능할 정도로 깊고 넓습니다.
+  결과는 더 구체적이고, 빠진 예외가 적습니다.
   
   결과의 격차는 프롬프트 단어 하나가 아니라 <strong>문제를 해석하고 정의하는 능력</strong>에서 발생한 것입니다.
-  지식의 절대량이 경쟁력이 되던 시대는 저물었습니다. 이제는 <strong>좋은 문제를 정의하고 구조화하는 사람</strong>이 강력한 경쟁력을 가집니다. AI는 지식 생성기가 아닌 문제 해결 엔진이기 때문입니다.”`,
+  이제는 <strong>좋은 문제를 정의하고 구조화하는 사람</strong>이 더 좋은 결과를 얻습니다. AI는 지식 생성기가 아니라 문제 해결 엔진이기 때문입니다.”`,
 
   // Slide 3: AI Agent Era
   `“최근 에이전트(Agent)가 핫이슈지만 많은 이들이 여전히 챗봇 형태로 대화하는 데 그칩니다. 
@@ -369,13 +369,13 @@ const initSlide2 = () => {
       barA.style.width = '35%';
       resultA.className = 'result-box has-content red-border';
       resultA.innerHTML = `
-        <h6>⚠️ A의 결과 (단순 챗봇 활용)</h6>
+        <h6>⚠️ A의 결과</h6>
         <ul>
-          <li>TC 1: 아이디/비밀번호 입력 후 로그인 클릭 -> 정상 성공</li>
-          <li>TC 2: 빈 아이디 입력 -> 경고 노출 확인</li>
-          <li>TC 3: 틀린 비밀번호 입력 -> 에러 메시지 노출 확인</li>
+          <li>정상 로그인</li>
+          <li>빈 값 검증</li>
+          <li>비밀번호 오류</li>
         </ul>
-        <p class="text-muted" style="font-size:0.75rem; margin-top:10px;">* 평가: 평범하고 단편적인 테스트케이스만 생성됨. 예외 케이스 및 모바일 등 다중 환경 검증 누락.</p>
+        <p class="text-muted" style="font-size:0.75rem; margin-top:10px;">빠진 상황이 많고, 스크립트가 얕습니다.</p>
       `;
     }, 1200);
 
@@ -383,14 +383,13 @@ const initSlide2 = () => {
       barB.style.width = '95%';
       resultB.className = 'result-box has-content cyan-border';
       resultB.innerHTML = `
-        <h6>🎯 B의 결과 (에이전틱 오케스트레이션)</h6>
-        <p><strong>1. 요구사항 & 위험 모델 분석</strong><br>
-        - 소셜 로그인, 이중 인증(2FA), 비밀번호 재설정 플로우 분석 완료.<br>
-        - 보안 위험(High): 로그인 폼 무차별 대입 공격(Brute Force) 취약점 식별.</p>
-        <p><strong>2. 구조적 테스트 설계</strong><br>
-        - <strong>보안 검증</strong>: 비정상 토큰 주입, SQL Injection 예외 테스트 케이스 도출.<br>
-        - <strong>성능 & 한계</strong>: 초당 100회 요청 시 IP 차단 메커니즘 검증.<br>
-        - <strong>엣지 케이스</strong>: 세션 만료 직후 로그인 요청 처리, 네트워크 지연 시의 오류 처리.</p>
+        <h6>🎯 B의 결과</h6>
+        <ul>
+          <li>요구사항을 먼저 나눠서 봄</li>
+          <li>빠지기 쉬운 예외를 미리 넣음</li>
+          <li>보안·성능·엣지 케이스까지 포함</li>
+        </ul>
+        <p class="text-muted" style="font-size:0.75rem; margin-top:10px;">문제를 잘 정의해서, 더 빠지고 덜 흔들리는 스크립트가 나옵니다.</p>
       `;
     }, 2000);
   });
