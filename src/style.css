@@ -1885,6 +1885,85 @@ body {
   color: var(--text-primary);
 }
 
+.battle-comparison-modal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.battle-comparison-card {
+  border-radius: 20px;
+  padding: 18px;
+  border: 1px solid var(--border-glass);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.comparison-a {
+  box-shadow: 0 0 0 1px rgba(239, 68, 68, 0.08) inset;
+}
+
+.comparison-b {
+  box-shadow: 0 0 0 1px rgba(6, 182, 212, 0.1) inset;
+}
+
+.comparison-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  margin-bottom: 14px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.comparison-a .comparison-label {
+  background: var(--neon-red);
+}
+
+.comparison-b .comparison-label {
+  background: var(--neon-cyan);
+}
+
+.comparison-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px 0 18px;
+}
+
+.comparison-line {
+  height: 18px;
+  border-radius: 999px;
+}
+
+.comparison-line.short {
+  width: 54%;
+  background: linear-gradient(90deg, rgba(239, 68, 68, 0.95), rgba(239, 68, 68, 0.45));
+}
+
+.comparison-line.medium {
+  width: 76%;
+  background: linear-gradient(90deg, rgba(168, 85, 247, 0.95), rgba(168, 85, 247, 0.45));
+}
+
+.comparison-line.long {
+  width: 94%;
+  background: linear-gradient(90deg, rgba(34, 211, 238, 0.95), rgba(37, 99, 235, 0.45));
+}
+
+.battle-comparison-card h4 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.battle-comparison-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
 /* Responsive CSS */
 @media (max-width: 1024px) {
   .section-heading {
@@ -1927,6 +2006,9 @@ body {
   }
   .vs-slash {
     padding: 10px 0;
+  }
+  .battle-comparison-modal {
+    grid-template-columns: 1fr;
   }
 }
 

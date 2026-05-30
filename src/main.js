@@ -344,6 +344,10 @@ const initSlide2 = () => {
   const barA = document.getElementById('barA');
   const barB = document.getElementById('barB');
   const promptCode = document.getElementById('promptBCode');
+  const openBattleModal = (html) => {
+    modalContentBody.innerHTML = html;
+    detailModal.classList.add('active');
+  };
 
   // Hover over code to expand it
   promptCode.parentElement.addEventListener('mouseenter', () => {
@@ -391,6 +395,35 @@ const initSlide2 = () => {
         </ul>
         <p class="text-muted" style="font-size:0.75rem; margin-top:10px;">문제를 잘 정의해서, 더 빠지고 덜 흔들리는 스크립트가 나옵니다.</p>
       `;
+
+      openBattleModal(`
+        <h3 class="modal-body-title">A / B 결과 비교</h3>
+        <div class="battle-comparison-modal">
+          <div class="battle-comparison-card comparison-a">
+            <div class="comparison-label">A</div>
+            <div class="comparison-visual">
+              <div class="comparison-line short"></div>
+              <div class="comparison-line short"></div>
+              <div class="comparison-line short"></div>
+              <div class="comparison-line short"></div>
+            </div>
+            <h4>짧고 얕은 스크립트</h4>
+            <p>기본 기능만 잡혀 있고, 빠진 상황이 많습니다.</p>
+          </div>
+          <div class="battle-comparison-card comparison-b">
+            <div class="comparison-label">B</div>
+            <div class="comparison-visual">
+              <div class="comparison-line long"></div>
+              <div class="comparison-line medium"></div>
+              <div class="comparison-line long"></div>
+              <div class="comparison-line medium"></div>
+              <div class="comparison-line long"></div>
+            </div>
+            <h4>빠짐이 적은 스크립트</h4>
+            <p>요구사항을 나눠서 보니 예외와 위험이 함께 들어갑니다.</p>
+          </div>
+        </div>
+      `);
     }, 2000);
   });
 };
