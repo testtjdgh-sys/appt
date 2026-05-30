@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI 시대의 사고방식 변화 - Shift in Mindset</title>
+    <!-- Google Fonts: Outfit & Inter for high-end look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Background Ambient Glows -->
+      <div class="ambient-glow glow-1"></div>
+      <div class="ambient-glow glow-2"></div>
+      <div class="ambient-glow glow-3"></div>
+
+      <!-- Floating Controls Area (Completely replacing fixed Header/Footer bars) -->
+      <div class="floating-top-actions">
+        <button class="btn-notes-toggle floating-btn" id="notesToggleBtn" title="발표자 스크립트 보기">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 8 0h6v18H2z"/><path d="M6 8h12"/><path d="M6 12h12"/><path d="M6 16h8"/></svg>
+          노트
+        </button>
+        <button class="btn-theme-toggle floating-btn" id="themeToggle" aria-label="Toggle Theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+      </div>
+
+      <!-- Main Slides Container -->
+      <main class="slides-container">
+        <!-- SLIDE 0: Opening -->
+        <section class="slide-section active" id="slide-0" data-index="0">
+          <div class="slide-content opening-slide">
+            <div class="badge animated-fade">INTRODUCTION</div>
+            <h1 class="slide-title line-1">AI는 기술 혁명이 아니다.</h1>
+            <h1 class="slide-title line-2 highlighting">노동력 혁명이다.</h1>
+            
+            <!-- Interactive Trigger Card -->
+            <div class="interactive-card trigger-card">
+              <h3 class="card-prompt">“만약 내일부터 여러분에게 <span class="highlight-neon">AI 직원 100명</span>이 생긴다면 무엇을 시키시겠습니까?”</h3>
+              <div class="word-selector">
+                <button class="selector-btn" data-target="dev">개발 (Coding)</button>
+                <button class="selector-btn" data-target="test">테스트 (QA)</button>
+                <button class="selector-btn" data-target="doc">문서 작성</button>
+                <button class="selector-btn" data-target="research">자료 조사</button>
+              </div>
+              <div class="reveal-message" id="openingReveal">
+                <div class="insight-box">
+                  <span class="insight-icon">💡</span>
+                  <p class="insight-text">
+                    진짜 중요한 것은 <strong>“무엇을 시킬 것인가”</strong>가 아니라<br>
+                    <strong class="highlight-neon">“어떻게 일을 나눌 것인가 (업무 분해)”</strong>입니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 1: Paradigm Shift -->
+        <section class="slide-section" id="slide-1" data-index="1">
+          <div class="slide-content">
+            <div class="badge">PART 01</div>
+            <h2 class="section-heading">AI는 무엇을 바꾸고 있는가</h2>
+            <p class="section-guide-text">혁명 카드를 클릭하여 세부 내용과 강연 메시지를 확인해보세요.</p>
+
+            <!-- Three Automations Grid -->
+            <div class="automation-grid">
+              <div class="auto-card clickable-card" data-detail="machine">
+                <div class="auto-header">
+                  <div class="icon-circle">💪</div>
+                  <h3>기계 혁명</h3>
+                </div>
+                <div class="auto-body">
+                  <div class="transform-path">
+                    <span class="from">인간의 근육</span>
+                    <span class="arrow">→</span>
+                    <span class="to highlight-blue">기계 (Machine)</span>
+                  </div>
+                  <p>육체적 피로의 극복 및 대량 생산</p>
+                </div>
+              </div>
+              
+              <div class="auto-card clickable-card" data-detail="computer">
+                <div class="auto-header">
+                  <div class="icon-circle">🧮</div>
+                  <h3>컴퓨터 혁명</h3>
+                </div>
+                <div class="auto-body">
+                  <div class="transform-path">
+                    <span class="from">인간의 계산</span>
+                    <span class="arrow">→</span>
+                    <span class="to highlight-purple">컴퓨터 (Software)</span>
+                  </div>
+                  <p>정보 저장/처리 및 연산의 자동화</p>
+                </div>
+              </div>
+
+              <div class="auto-card clickable-card active-pulse" data-detail="ai">
+                <div class="auto-header">
+                  <div class="icon-circle">🧠</div>
+                  <h3>AI 혁명</h3>
+                </div>
+                <div class="auto-body">
+                  <div class="transform-path">
+                    <span class="from">인간의 사고</span>
+                    <span class="arrow">→</span>
+                    <span class="to highlight-neon">AI (Intelligence)</span>
+                  </div>
+                  <p>요약, 정리, 분석, 추론의 자동화</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Conclusion Alert -->
+            <div class="paradigm-conclusion glass-panel">
+              <div class="vs-container">
+                <div class="vs-side from-side">
+                  <span class="label">과거의 관점</span>
+                  <h4>AI를 사용하는 시대</h4>
+                  <p>생산성을 보조하는 개별 도구(Tool)로 인식</p>
+                </div>
+                <div class="vs-divider">▶</div>
+                <div class="vs-side to-side">
+                  <span class="label highlight-label">새로운 패러다임</span>
+                  <h4>AI 노동력을 관리하는 시대</h4>
+                  <p>디지털 노동력(Workforce)을 지휘하고 조율</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 2: Competitiveness Shift -->
+        <section class="slide-section" id="slide-2" data-index="2">
+          <div class="slide-content">
+            <div class="badge">PART 02</div>
+            <h2 class="section-heading">AI 시대, 경쟁력의 재정의</h2>
+
+            <!-- Prompt Battlefield Simulator -->
+            <div class="battlefield-container">
+              <div class="battle-column">
+                <div class="user-profile">
+                  <div class="avatar avatar-a">A</div>
+                  <div>
+                    <h4>사용자 A (도구로 접근)</h4>
+                    <span class="subtitle">단순 기능 호출 (Instruction)</span>
+                  </div>
+                </div>
+                <div class="prompt-box">
+                  <h5>Prompt</h5>
+                  <code>"로그인 기능 테스트케이스 만들어줘."</code>
+                </div>
+                <div class="result-box" id="resultA">
+                  <span class="placeholder-text">시뮬레이션을 시작하여 결과를 확인하세요.</span>
+                </div>
+              </div>
+
+              <div class="battle-vs">
+                <button class="btn-battle" id="startBattle">시뮬레이션 실행</button>
+                <div class="battle-metrics">
+                  <div class="metric">
+                    <span class="metric-label">A의 결과 수준 (Depth)</span>
+                    <div class="bar-bg"><div class="bar-fill" id="barA" style="width: 0%"></div></div>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-label">B의 결과 수준 (Depth)</span>
+                    <div class="bar-bg"><div class="bar-fill highlight-neon-bg" id="barB" style="width: 0%"></div></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="battle-column">
+                <div class="user-profile">
+                  <div class="avatar avatar-b">B</div>
+                  <div>
+                    <h4>사용자 B (지휘관으로 접근)</h4>
+                    <span class="subtitle">체계적 문제 정의 (Intent)</span>
+                  </div>
+                </div>
+                <div class="prompt-box">
+                  <h5>Decomposition Flow</h5>
+                  <code class="code-collapsed" id="promptBCode">
+1. 로그인 사양 및 보안 요구사항 파싱
+2. 인증 누락 예외 케이스 식별
+3. 외부 위협 평가 (Rate Limit 등)
+4. 중요 테스트 범위(TC) 설계
+5. 결과 검토 및 정제
+                  </code>
+                </div>
+                <div class="result-box" id="resultB">
+                  <span class="placeholder-text">시뮬레이션을 시작하여 결과를 확인하세요.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Insight Shift -->
+            <div class="insight-banner">
+              <div class="insight-item">
+                <div class="circle-num">과거</div>
+                <div class="insight-desc">
+                  <strong>많이 아는 사람 (Knowledge)</strong>
+                  <p>습득된 지식량과 암기가 주효했던 경쟁력</p>
+                </div>
+              </div>
+              <div class="arrow-down">→</div>
+              <div class="insight-item active">
+                <div class="circle-num active">현재</div>
+                <div class="insight-desc">
+                  <strong>문제를 규정하는 사람 (Problem Definition)</strong>
+                  <p>해결 대상을 명확히 정의하고 쪼개는 능력</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 3: AI Agent Era (3D Scene) -->
+        <section class="slide-section" id="slide-3" data-index="3">
+          <div class="slide-content agent-slide">
+            <div class="badge">PART 03</div>
+            <h2 class="section-heading">AI Agent 시대: 업무 위임</h2>
+
+            <div class="agent-workspace">
+              <!-- Left Panel: 3D Visualization -->
+              <div class="three-container">
+                <div id="canvas3d"></div>
+                <div class="canvas-instruction">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+                  노드를 드래그해 탐색하고, 클릭하여 협업 상태를 모니터링하세요.
+                </div>
+              </div>
+
+              <!-- Right Panel: Agent Details / Workflow Simulator -->
+              <div class="agent-control-panel glass-panel">
+                <div class="allocator-header">
+                  <h3>에이전트 조직 아키텍처</h3>
+                  <p>슬라이더로 사용 인력을 조절하여 협업 구성을 다이내믹하게 최적화하세요.</p>
+                </div>
+                
+                <div class="slider-control">
+                  <div class="slider-labels">
+                    <span>가용 디지털 에이전트</span>
+                    <span id="agentCountText" class="highlight-neon font-bold">10명</span>
+                  </div>
+                  <input type="range" id="agentSlider" min="5" max="100" value="10" class="neon-slider">
+                </div>
+
+                <div class="dynamic-roles-container">
+                  <div id="rolesList" class="roles-list">
+                    <!-- Dynamic rendering -->
+                  </div>
+                </div>
+
+                <!-- Live Agent Console -->
+                <div class="agent-console">
+                  <div class="console-header">
+                    <span class="status-dot pulsating"></span>
+                    <span class="console-title">에이전트 실시간 협업 스트림</span>
+                  </div>
+                  <div class="console-output" id="consoleOutput">
+                    [System] 3D 에이전트 노드를 클릭해 실시간 추론 스트림을 모니터링하세요.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 4: Role Transition -->
+        <section class="slide-section" id="slide-4" data-index="4">
+          <div class="slide-content">
+            <div class="badge">PART 04</div>
+            <h2 class="section-heading">QA & 개발 엔지니어 역할 전환</h2>
+
+            <div class="transition-container">
+              <!-- Left Side: Role Shift Cards -->
+              <div class="transition-cards">
+                <div class="t-card">
+                  <div class="t-badge from-badge">기존 역할</div>
+                  <h3>실무 생산자 (Executor)</h3>
+                  <ul>
+                    <li>테스트 사양 분석 및 수동 작성</li>
+                    <li>시나리오 스크립트 실행 및 결과 기재</li>
+                    <li>결함 내용 수동 캡처 및 버그 보고서 작성</li>
+                  </ul>
+                  <div class="card-focus">단순 생산에 투입되는 시간: <strong>80%</strong></div>
+                </div>
+                
+                <div class="t-arrow">⇄</div>
+
+                <div class="t-card active">
+                  <div class="t-badge to-badge">미래 역할</div>
+                  <h3>조직 감독자 (Supervisor)</h3>
+                  <ul>
+                    <li>AI 에이전트 조직이 도출한 설계 검토 및 보강</li>
+                    <li>엣지 케이스 및 보안 리스크 최종 검증</li>
+                    <li>실행 결과 승인 및 시스템 배포 의사결정</li>
+                  </ul>
+                  <div class="card-focus highlight-neon">오케스트레이션 및 승인 시간: <strong>80%</strong></div>
+                </div>
+              </div>
+
+              <!-- Right Side: Interactive Time Allocation Chart -->
+              <div class="time-allocation-glass glass-panel">
+                <h3>역할 변화에 따른 리소스 배분 시뮬레이터</h3>
+                <p>AI 위임 수준을 조절하여 업무 패턴의 대전환을 확인하세요.</p>
+                
+                <div class="chart-container">
+                  <div class="chart-bar-group">
+                    <span class="chart-label">단순 작성 & 수동 실행 (Execution)</span>
+                    <div class="chart-bar-wrapper">
+                      <div class="chart-bar bar-execution" id="barExecution" style="width: 80%">80%</div>
+                    </div>
+                  </div>
+                  <div class="chart-bar-group">
+                    <span class="chart-label">에이전트 조직 설계 & 조율 (Design)</span>
+                    <div class="chart-bar-wrapper">
+                      <div class="chart-bar bar-design" id="barDesign" style="width: 10%">10%</div>
+                    </div>
+                  </div>
+                  <div class="chart-bar-group">
+                    <span class="chart-label">리뷰 및 의사결정 (Decision)</span>
+                    <div class="chart-bar-wrapper">
+                      <div class="chart-bar bar-review" id="barReview" style="width: 10%">10%</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider-control">
+                  <div class="slider-labels">
+                    <span>AI 업무 위임 수준</span>
+                    <span id="aiAdoptText" class="highlight-purple font-bold">도입 초기 (10%)</span>
+                  </div>
+                  <input type="range" id="aiAdoptSlider" min="0" max="100" value="10" class="purple-slider">
+                </div>
+
+                <div class="chart-insight" id="chartInsight">
+                  단순 작성 및 수동 테스트 실행에 하루 일과의 대부분을 쏟고 있습니다.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 5: Conclusion -->
+        <section class="slide-section" id="slide-5" data-index="5">
+          <div class="slide-content conclusion-slide">
+            <div class="badge animated-fade">CONCLUSION</div>
+            
+            <div class="conclusion-manifesto">
+              <div class="manifesto-card m-1">
+                <h2>AI는 사람을 대체하지 않는다.</h2>
+              </div>
+              <div class="manifesto-card m-2">
+                <h2>AI를 사용하는 사람이 <br>사용하지 않는 사람을 대체한다.</h2>
+              </div>
+              <div class="manifesto-card m-3 highlight-card">
+                <h2>그리고, AI 노동력을 지휘하는 사람이 <br>단순히 AI를 사용하는 사람을 대체한다.</h2>
+              </div>
+            </div>
+
+            <div class="ending-question glass-panel">
+              <h3>앞으로 챗봇을 켤 때, 매번 스스로에게 던질 단 하나의 질문:</h3>
+              
+              <div class="question-vs">
+                <div class="q-box wrong">
+                  <span class="q-tag">단순 사용자의 질문</span>
+                  <h4>"이 일을 어떻게 하면 더 잘할 수 있을까?"</h4>
+                </div>
+                <div class="vs-slash">VS</div>
+                <div class="q-box right">
+                  <span class="q-tag">AI 지휘관의 질문</span>
+                  <h4>"이 일을 어떻게 분해해서 AI 에이전트 군단에게 맡길 것인가?"</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Floating Presenter Notes Panel -->
+      <div class="presenter-notes-panel" id="notesPanel">
+        <div class="notes-header">
+          <div class="notes-title-group">
+            <span class="notes-icon">🎙️</span>
+            <h4>발표자 대본 스크립트</h4>
+          </div>
+          <button class="btn-close-notes" id="closeNotesBtn" title="노트 닫기">×</button>
+        </div>
+        <div class="notes-content" id="notesContent">
+          <!-- Dynamic text updated via JavaScript -->
+        </div>
+      </div>
+
+      <!-- Minimal Floating Controls Overlay -->
+      <div class="floating-footer-navigation">
+        <div class="slide-nav-buttons-floating">
+          <button class="btn-floating-control" id="prevBtn" disabled title="이전 슬라이드 (좌방향키)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <span class="floating-slide-number"><span id="currentNum">1</span> / 6</span>
+          <button class="btn-floating-control highlight" id="nextBtn" title="다음 슬라이드 (우방향키/스페이스바)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Slide 1 Detail Popup Modal -->
+      <div class="modal-overlay" id="detailModal">
+        <div class="modal-content glass-panel animated-fade">
+          <button class="modal-close" id="modalCloseBtn" title="닫기">&times;</button>
+          <div id="modalContentBody">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Main Module JS -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
