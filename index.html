@@ -36,26 +36,15 @@
             <div class="badge animated-fade">INTRODUCTION</div>
             <h1 class="slide-title line-1">AI는 기술 혁명이 아니다.</h1>
             <h1 class="slide-title line-2 highlighting">노동력 혁명이다.</h1>
-            
-            <!-- Interactive Trigger Card -->
-            <div class="interactive-card trigger-card">
-              <h3 class="card-prompt">“만약 내일부터 여러분에게 <span class="highlight-neon">AI 직원 100명</span>이 생긴다면 무엇을 시키시겠습니까?”</h3>
-              <div class="word-selector">
-                <button class="selector-btn" data-target="dev">개발 (Coding)</button>
-                <button class="selector-btn" data-target="test">테스트 (QA)</button>
-                <button class="selector-btn" data-target="doc">문서 작성</button>
-                <button class="selector-btn" data-target="research">자료 조사</button>
-              </div>
-              <div class="reveal-message" id="openingReveal">
-                <div class="insight-box">
-                  <span class="insight-icon">💡</span>
-                  <p class="insight-text">
-                    진짜 중요한 것은 <strong>“무엇을 시킬 것인가”</strong>가 아니라<br>
-                    <strong class="highlight-neon">“큰 일을 작은 단계로 나눠서, AI가 하나씩 맡게 하는 것”</strong>입니다.
-                    <br>즉, <strong>일을 잘 쪼개서 맡기는 능력</strong>이 중요합니다.
-                  </p>
-                </div>
-              </div>
+
+            <p class="opening-subtitle">
+              AI를 잘 쓰는 핵심은 "무엇을 시킬지"보다
+              <strong>큰 일을 작은 단계로 나눠서 맡기는 것</strong>입니다.
+            </p>
+
+            <div class="opening-hero">
+              <img src="./src/assets/hero.png" alt="AI 작업을 여러 단계로 나누는 개념을 표현한 이미지" class="opening-hero-image" />
+              <p class="opening-hero-caption">큰 과제를 여러 조각으로 나누면, AI는 한 번에 하나씩 더 정확하게 처리할 수 있습니다.</p>
             </div>
           </div>
         </section>
@@ -65,69 +54,62 @@
           <div class="slide-content">
             <div class="badge">PART 01</div>
             <h2 class="section-heading">AI는 무엇을 바꾸고 있는가</h2>
-            <p class="section-guide-text">혁명 카드를 클릭하여 세부 내용과 강연 메시지를 확인해보세요.</p>
+            <p class="section-guide-text">아래 세 가지 비유를 눌러서 각각의 혁명을 비교해보세요.</p>
 
-            <!-- Three Automations Grid -->
             <div class="automation-grid">
               <div class="auto-card clickable-card" data-detail="machine">
                 <div class="auto-header">
                   <div class="icon-circle">💪</div>
-                  <h3>기계 혁명</h3>
+                  <h3>근육을 대신한 기계</h3>
                 </div>
                 <div class="auto-body">
-                  <div class="transform-path">
-                    <span class="from">인간의 근육</span>
-                    <span class="arrow">→</span>
-                    <span class="to highlight-blue">기계 (Machine)</span>
-                  </div>
-                  <p>육체적 피로의 극복 및 대량 생산</p>
+                  <p>사람이 직접 힘을 쓰던 일을 기계가 맡기 시작했습니다.</p>
                 </div>
               </div>
-              
+
               <div class="auto-card clickable-card" data-detail="computer">
                 <div class="auto-header">
                   <div class="icon-circle">🧮</div>
-                  <h3>컴퓨터 혁명</h3>
+                  <h3>계산을 대신한 컴퓨터</h3>
                 </div>
                 <div class="auto-body">
-                  <div class="transform-path">
-                    <span class="from">인간의 계산</span>
-                    <span class="arrow">→</span>
-                    <span class="to highlight-purple">컴퓨터 (Software)</span>
-                  </div>
-                  <p>정보 저장/처리 및 연산의 자동화</p>
+                  <p>복잡한 계산과 데이터 처리를 컴퓨터가 대신하게 됐습니다.</p>
                 </div>
               </div>
 
               <div class="auto-card clickable-card active-pulse" data-detail="ai">
                 <div class="auto-header">
                   <div class="icon-circle">🧠</div>
-                  <h3>AI 혁명</h3>
+                  <h3>생각을 나눠 맡는 AI</h3>
                 </div>
                 <div class="auto-body">
-                  <div class="transform-path">
-                    <span class="from">인간의 사고</span>
-                    <span class="arrow">→</span>
-                    <span class="to highlight-neon">AI (Intelligence)</span>
-                  </div>
-                  <p>요약, 정리, 분석, 추론의 자동화</p>
+                  <p>이제는 생각해야 할 일도 작은 단계로 나눠 AI에 맡깁니다.</p>
                 </div>
               </div>
             </div>
 
-            <!-- Conclusion Alert -->
+            <div class="interactive-card trigger-card slide1-prompt">
+              <h3 class="card-prompt">“만약 내일부터 여러분에게 <span class="highlight-neon">AI 직원 100명</span>이 생긴다면 무엇을 시키시겠습니까?”</h3>
+              <div class="word-selector">
+                <button class="selector-btn" data-target="dev">개발 (Coding)</button>
+                <button class="selector-btn" data-target="test">테스트 (QA)</button>
+                <button class="selector-btn" data-target="doc">문서 작성</button>
+                <button class="selector-btn" data-target="research">자료 조사</button>
+              </div>
+            </div>
+
             <div class="paradigm-conclusion glass-panel">
               <div class="vs-container">
                 <div class="vs-side from-side">
-                  <span class="label">과거의 관점</span>
-                  <h4>AI를 사용하는 시대</h4>
-                  <p>생산성을 보조하는 개별 도구(Tool)로 인식</p>
+                  <span class="label">핵심</span>
+                  <h4>작은 단계로 나눠 맡기기</h4>
+                  <p>큰 일을 그대로 주지 말고, 먼저 쪼개서 역할을 나누는 것</p>
                 </div>
                 <div class="vs-divider">▶</div>
                 <div class="vs-side to-side">
-                  <span class="label highlight-label">새로운 패러다임</span>
-                  <h4>AI 노동력을 관리하는 시대</h4>
-                  <p>디지털 노동력(Workforce)을 지휘하고 조율</p>
+                  <span class="label highlight-label">결과</span>
+                  <h4>AI가 더 정확하게 처리</h4>
+                  <p>각 단계마다 AI가 할 일을 명확히 알아서 결과가 좋아집니다</p>
                 </div>
               </div>
             </div>
@@ -398,15 +380,16 @@
 
       <!-- Minimal Floating Controls Overlay -->
       <div class="floating-footer-navigation">
+        <button class="btn-floating-control" id="prevBtn" disabled title="이전 슬라이드 (좌방향키)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
         <div class="slide-nav-buttons-floating">
-          <button class="btn-floating-control" id="prevBtn" disabled title="이전 슬라이드 (좌방향키)">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-          </button>
+          <div class="nav-dots"></div>
           <span class="floating-slide-number"><span id="currentNum">1</span> / 6</span>
-          <button class="btn-floating-control highlight" id="nextBtn" title="다음 슬라이드 (우방향키/스페이스바)">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-          </button>
         </div>
+        <button class="btn-floating-control highlight" id="nextBtn" title="다음 슬라이드 (우방향키/스페이스바)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
       </div>
 
       <!-- Slide 1 Detail Popup Modal -->

@@ -28,13 +28,13 @@ const presenterNotes = [
   두 번째, <strong>컴퓨터 혁명</strong>은 인간의 <em>계산(정보 처리)</em>을 소프트웨어로 대체했죠.
   
   그렇다면 지금 마주한 <strong>AI 혁명</strong>은 무엇을 바꾸고 있을까요? 바로 인간의 <em>사고(Intelligence)의 일부</em>를 자동화하고 있습니다.
-  요약, 정리, 예외 탐색, 초안 생성... 과거엔 인간 고유의 영역이라 여겼던 것들입니다.
-  
-  화면의 기계 혁명, 컴퓨터 혁명, AI 혁명 카드를 클릭하시면 각 혁명이 던진 사회적 충격과 강연 메시지를 상세히 보실 수 있습니다.
+  쉽게 말해, <strong>기계가 몸의 힘을 대신했고, 컴퓨터가 계산을 대신했듯이, AI는 이제 생각의 일부를 나눠 맡기 시작했다</strong>는 뜻입니다.
   
   그래서 저는 AI를 단순히 쓰기 편리한 소프트웨어로 보지 않습니다. 
   <strong>'새로운 디지털 노동력(Workforce)'</strong>으로 봅니다.
-  우리는 단순히 AI를 개인의 보조 도구로 쓰는 시대를 지나, <strong>AI 노동력을 전략적으로 관리하고 조율하는 시대</strong>로 넘어가고 있습니다.”`,
+  우리는 단순히 AI를 개인의 보조 도구로 쓰는 시대를 지나, <strong>AI 노동력을 전략적으로 관리하고 조율하는 시대</strong>로 넘어가고 있습니다.
+  
+  그래서 다음 장에서는 <strong>AI에게 일을 어떻게 쪼개서 맡길 것인가</strong>를 조금 더 구체적으로 보겠습니다.”`,
 
   // Slide 2: Competitiveness Shift
   `“흔히 AI 시대에는 '프롬프트 잘 쓰는 사람'이 최고라고 생각합니다. 반은 맞고 반은 틀립니다.
@@ -594,12 +594,10 @@ const onSlideActive = (slideIndex) => {
 // BOOTSTRAPPING
 // ==========================================================================
 const buildDotIndicators = () => {
-  const nav = document.querySelector('.slide-nav-buttons-floating');
-  if (!nav) return;
-
-  // Create dots container and insert before the number span
-  const dotsEl = document.createElement('div');
-  dotsEl.className = 'nav-dots';
+  const dotsEl = document.querySelector('.nav-dots');
+  if (!dotsEl) return;
+  dotsEl.innerHTML = '';
+  dotEls = [];
 
   for (let i = 0; i < totalSlides; i++) {
     const dot = document.createElement('button');
@@ -609,9 +607,6 @@ const buildDotIndicators = () => {
     dotsEl.appendChild(dot);
     dotEls.push(dot);
   }
-
-  // Insert dots before the control buttons so they sit on the left edge
-  nav.insertBefore(dotsEl, nav.firstChild);
 };
 
 document.addEventListener('DOMContentLoaded', () => {
