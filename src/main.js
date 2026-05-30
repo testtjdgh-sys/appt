@@ -86,6 +86,9 @@ const presenterNotes = [
 const slide1Details = {
   machine: `
     <h3 class="modal-body-title">💪 기계 혁명 (Machine Revolution)</h3>
+    <div class="modal-image-wrap">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Illustration%201919%20Machine%20Boirault.jpg" alt="기계 혁명 이미지" class="modal-image" />
+    </div>
     <div class="modal-body-section">
       <h4>핵심 개요</h4>
       <p>인간의 <strong>근육(육체 노동)</strong>을 기계로 대체하여 가내수공업에서 대규모 공장제 대량생산으로 이행한 시기입니다.</p>
@@ -101,6 +104,9 @@ const slide1Details = {
   `,
   computer: `
     <h3 class="modal-body-title">🧮 컴퓨터 혁명 (Computer Revolution)</h3>
+    <div class="modal-image-wrap">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Smiling%20cartoon%20man%20with%20thumbs%20up%20using%20a%20computer.jpg" alt="컴퓨터 혁명 이미지" class="modal-image" />
+    </div>
     <div class="modal-body-section">
       <h4>핵심 개요</h4>
       <p>인간의 <strong>계산(정보 처리)</strong>을 트랜지스터와 인터넷 소프트웨어가 대행하며 아날로그 장부 시대에서 디지털 시대로 이행한 시기입니다.</p>
@@ -116,6 +122,9 @@ const slide1Details = {
   `,
   ai: `
     <h3 class="modal-body-title">🧠 AI 혁명 (AI Agent Revolution)</h3>
+    <div class="modal-image-wrap">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Robot%20icon.svg" alt="AI 혁명 이미지" class="modal-image" />
+    </div>
     <div class="modal-body-section">
       <h4>핵심 개요</h4>
       <p>인간 고유의 전유물로 믿었던 <strong>사고와 지적 판단(추론)</strong>의 일부를 LLM 및 자율 에이전트망에 아웃소싱하기 시작한 오늘날의 혁명입니다.</p>
