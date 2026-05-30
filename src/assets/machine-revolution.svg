@@ -1,0 +1,30 @@
+<svg width="800" height="520" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="520" rx="36" fill="#0B1020"/>
+  <circle cx="400" cy="260" r="170" fill="#3B82F6" fill-opacity="0.08"/>
+  <circle cx="400" cy="260" r="110" fill="#22D3EE" fill-opacity="0.10"/>
+  <rect x="190" y="170" width="170" height="180" rx="26" fill="#111827" stroke="#38BDF8" stroke-width="3"/>
+  <path d="M230 210H320" stroke="#E2E8F0" stroke-width="10" stroke-linecap="round"/>
+  <path d="M230 250H320" stroke="#A5B4FC" stroke-width="10" stroke-linecap="round"/>
+  <path d="M230 290H320" stroke="#E2E8F0" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="280" cy="140" r="28" fill="#38BDF8"/>
+  <path d="M280 98V112" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M280 168V182" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M238 140H252" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M308 140H322" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M251 111L261 121" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M299 159L309 169" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M251 169L261 159" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M299 121L309 111" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+
+  <path d="M430 210H610" stroke="#64748B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M520 170V350" stroke="#64748B" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="520" cy="260" r="72" fill="#111827" stroke="#22D3EE" stroke-width="4"/>
+  <path d="M494 260H546" stroke="#22D3EE" stroke-width="12" stroke-linecap="round"/>
+  <path d="M520 234V286" stroke="#22D3EE" stroke-width="12" stroke-linecap="round"/>
+  <path d="M450 300L470 280" stroke="#A855F7" stroke-width="8" stroke-linecap="round"/>
+  <path d="M450 220L470 240" stroke="#A855F7" stroke-width="8" stroke-linecap="round"/>
+  <path d="M570 240L590 220" stroke="#A855F7" stroke-width="8" stroke-linecap="round"/>
+  <path d="M570 280L590 300" stroke="#A855F7" stroke-width="8" stroke-linecap="round"/>
+
+  <text x="400" y="430" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700" fill="#F8FAFC">근육을 대신한 기계</text>
+</svg>
