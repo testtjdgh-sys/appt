@@ -654,16 +654,10 @@ body {
   white-space: pre-wrap;
 }
 
-.prompt-box code.code-collapsed {
+.prompt-box code {
   display: block;
-  max-height: 48px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transition: max-height 0.4s ease;
-}
-
-.prompt-box code.code-expanded {
-  max-height: 200px;
+  max-height: none;
+  overflow: visible;
 }
 
 .result-box {
@@ -1964,6 +1958,52 @@ body {
   line-height: 1.6;
 }
 
+.modal-content {
+  width: min(96vw, 1600px);
+  max-width: none;
+  max-height: 92vh;
+  overflow: auto;
+}
+
+.modal-full-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.modal-kicker {
+  color: var(--neon-cyan);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.modal-full-note {
+  max-width: 460px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.battle-comparison-modal.full-bleed {
+  gap: 24px;
+}
+
+.battle-comparison-card.big-card {
+  min-height: 420px;
+  padding: 28px;
+}
+
+.battle-comparison-card.big-card h4 {
+  font-size: 1.35rem;
+}
+
+.battle-comparison-card.big-card p {
+  font-size: 1.02rem;
+}
+
 /* Responsive CSS */
 @media (max-width: 1024px) {
   .section-heading {
@@ -2009,6 +2049,10 @@ body {
   }
   .battle-comparison-modal {
     grid-template-columns: 1fr;
+  }
+  .modal-full-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 

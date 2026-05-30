@@ -343,22 +343,10 @@ const initSlide2 = () => {
   const resultB = document.getElementById('resultB');
   const barA = document.getElementById('barA');
   const barB = document.getElementById('barB');
-  const promptCode = document.getElementById('promptBCode');
   const openBattleModal = (html) => {
     modalContentBody.innerHTML = html;
     detailModal.classList.add('active');
   };
-
-  // Hover over code to expand it
-  promptCode.parentElement.addEventListener('mouseenter', () => {
-    promptCode.classList.remove('code-collapsed');
-    promptCode.classList.add('code-expanded');
-  });
-
-  promptCode.parentElement.addEventListener('mouseleave', () => {
-    promptCode.classList.remove('code-expanded');
-    promptCode.classList.add('code-collapsed');
-  });
 
   startBtn.addEventListener('click', () => {
     resultA.innerHTML = '<span class="placeholder-text">실행 중...</span>';
@@ -397,20 +385,27 @@ const initSlide2 = () => {
       `;
 
       openBattleModal(`
-        <h3 class="modal-body-title">A / B 결과 비교</h3>
-        <div class="battle-comparison-modal">
-          <div class="battle-comparison-card comparison-a">
+        <div class="modal-full-header">
+          <div>
+            <div class="modal-kicker">SIMULATION RESULT</div>
+            <h3 class="modal-body-title">A / B 결과 비교</h3>
+          </div>
+          <p class="modal-full-note">A는 기능 지시, B는 문제 정의와 운영 규칙까지 포함합니다.</p>
+        </div>
+        <div class="battle-comparison-modal full-bleed">
+          <div class="battle-comparison-card comparison-a big-card">
             <div class="comparison-label">A</div>
             <div class="comparison-visual">
               <div class="comparison-line short"></div>
               <div class="comparison-line short"></div>
               <div class="comparison-line short"></div>
               <div class="comparison-line short"></div>
+              <div class="comparison-line short"></div>
             </div>
-            <h4>짧고 얕은 스크립트</h4>
-            <p>기본 기능만 잡혀 있고, 빠진 상황이 많습니다.</p>
+            <h4>짧고 얕은 결과</h4>
+            <p>기본 기능은 보이지만, 예외와 위험이 빠져 있습니다.</p>
           </div>
-          <div class="battle-comparison-card comparison-b">
+          <div class="battle-comparison-card comparison-b big-card">
             <div class="comparison-label">B</div>
             <div class="comparison-visual">
               <div class="comparison-line long"></div>
@@ -418,9 +413,10 @@ const initSlide2 = () => {
               <div class="comparison-line long"></div>
               <div class="comparison-line medium"></div>
               <div class="comparison-line long"></div>
+              <div class="comparison-line medium"></div>
             </div>
-            <h4>빠짐이 적은 스크립트</h4>
-            <p>요구사항을 나눠서 보니 예외와 위험이 함께 들어갑니다.</p>
+            <h4>빠짐이 적은 결과</h4>
+            <p>요구사항, 예외, 위험을 먼저 나눠서 보니 더 깊고 넓습니다.</p>
           </div>
         </div>
       `);

@@ -107,6 +107,19 @@
             <div class="badge">PART 02</div>
             <h2 class="section-heading">AI 시대, 경쟁력의 재정의</h2>
 
+            <div class="battle-prompts-preview glass-panel">
+              <div class="battle-prompt-preview-card preview-a">
+                <div class="preview-tag">A INPUT</div>
+                <h3>한 줄 지시</h3>
+                <p>"로그인 기능 테스트 케이스 스크립트 만들어줘."</p>
+              </div>
+              <div class="battle-prompt-preview-card preview-b">
+                <div class="preview-tag">B INPUT</div>
+                <h3>문제 정의 + 운영 규칙</h3>
+                <p>요구사항, 예외, 위험을 먼저 정리하고, 필요하면 <strong>md 파일</strong>과 <strong>skill</strong>로 실행 기준을 통제한다.</p>
+              </div>
+            </div>
+
             <!-- Prompt Battlefield Simulator -->
             <div class="battlefield-container">
               <div class="battle-column">
@@ -150,7 +163,7 @@
                 </div>
                 <div class="prompt-box">
                   <h5>Decomposition Flow</h5>
-                  <code class="code-collapsed" id="promptBCode">
+                  <code id="promptBCode">
 1. 로그인 사양 및 보안 요구사항 파싱
 2. 인증 누락 예외 케이스 식별
 3. 외부 위협 평가 (Rate Limit 등)
