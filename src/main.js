@@ -18,7 +18,8 @@ const presenterNotes = [
   
   개발, 테스트, 문서 작성, 자료 조사... 많은 답이 나옵니다. 
   흥미로운 점은 대개 <strong>'AI에게 시켜야 할 일(Task)'</strong>을 먼저 구상한다는 점입니다. 
-  하지만 AI를 조율할 때 진짜 핵심은 <strong>'무엇을 시키느냐가 아니라, 어떻게 일을 쪼개고 분할해서 나눌 것인가(업무 분해 능력)'</strong>입니다.”`,
+  하지만 AI를 조율할 때 진짜 핵심은 <strong>'무엇을 시키느냐가 아니라, 일을 나눠서 각각 맡길 수 있느냐'</strong>입니다.
+  쉽게 말해, <strong>한 번에 큰 일 하나를 던지는 것보다, AI가 처리하기 쉬운 작은 단계로 쪼개서 맡기는 능력</strong>이 중요하다는 뜻입니다.”`,
 
   // Slide 1: Paradigm Shift
   `“인류 역사에는 생산 방식의 주체를 완전히 바꾼 세 차례의 큰 자동화가 있었습니다.
@@ -609,9 +610,8 @@ const buildDotIndicators = () => {
     dotEls.push(dot);
   }
 
-  // Insert dots between prev button and number
-  const numSpan = nav.querySelector('.floating-slide-number');
-  nav.insertBefore(dotsEl, numSpan);
+  // Insert dots before the control buttons so they sit on the left edge
+  nav.insertBefore(dotsEl, nav.firstChild);
 };
 
 document.addEventListener('DOMContentLoaded', () => {

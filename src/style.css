@@ -1625,8 +1625,8 @@ body {
 .floating-footer-navigation {
   position: absolute;
   bottom: 25px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 25px;
+  transform: none;
   z-index: 100;
 }
 
